@@ -18,6 +18,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { SharedModule } from './_modules/shared.module';
 import { ErrorInterceptor } from './_interceptors/error.interceptor';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MemberCarComponent } from './members/member-car/member-car.component';
+import { JwtInterceptor } from './_interceptors/jwt.interceptor';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MemberDetailComponent,
     ListsComponent,
     MessagesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MemberCarComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SharedModule
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true}
+
   ],
   bootstrap: [AppComponent]
 })
