@@ -4,10 +4,9 @@ import { ServerErrorComponent } from './errors/server-error/server-error.compone
 import { HomeComponent } from './home/home.component';
 import { ListsComponent } from './lists/lists.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
-<<<<<<< HEAD
+
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
-=======
->>>>>>> e5f9b9cc2e07e70b90a6f2916d9a822d179f039b
+
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { MessagesComponent } from './messages/messages.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -25,10 +24,9 @@ const routes: Routes = [
 
       {path: 'members', component: MemberListComponent},
       {path: 'members/:username', component: MemberDetailComponent},
-<<<<<<< HEAD
+
       {path: 'member/edit', component: MemberEditComponent},
-=======
->>>>>>> e5f9b9cc2e07e70b90a6f2916d9a822d179f039b
+
       {path: 'lists', component: ListsComponent},
       {path: 'messages', component: MessagesComponent},
     ]

@@ -9,8 +9,5 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7"/>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0"/>
   </ItemGroup>
-<<<<<<< HEAD
+
 </Project> 
-=======
-</Project>
->>>>>>> e5f9b9cc2e07e70b90a6f2916d9a822d179f039b
