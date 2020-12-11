@@ -20,7 +20,10 @@ import { ErrorInterceptor } from './_interceptors/error.interceptor';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MemberCarComponent } from './members/member-car/member-car.component';
 import { JwtInterceptor } from './_interceptors/jwt.interceptor';
+<<<<<<< HEAD
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
+=======
+>>>>>>> e5f9b9cc2e07e70b90a6f2916d9a822d179f039b
 
 
 @NgModule({
@@ -34,8 +37,12 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
     ListsComponent,
     MessagesComponent,
     NotFoundComponent,
+<<<<<<< HEAD
     MemberCarComponent,
     MemberEditComponent
+=======
+    MemberCarComponent
+>>>>>>> e5f9b9cc2e07e70b90a6f2916d9a822d179f039b
   ],
   imports: [
     BrowserModule,
