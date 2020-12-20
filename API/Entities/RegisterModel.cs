@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace API.Entities
@@ -7,8 +8,25 @@ namespace API.Entities
 
         [Required]
         public string Username { get; set; }
+
         [Required]
-        [StringLength(20, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+        public string knownAs {get; set;}
+
+        [Required]
+        public string Gender { get; set; }
+
+        [Required]
+        public DateTime DateOfBirth { get; set; }
+
+        [Required]
+
+        public string City { get; set; }
+
+        [Required]
+        public string Country { get; set; }
+
+        [Required]
+        [StringLength(12, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 4)]
         public string Password {get; set; }
 
 
