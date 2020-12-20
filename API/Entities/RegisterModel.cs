@@ -26,7 +26,7 @@ namespace API.Entities
         public string Country { get; set; }
 
         [Required]
-        [StringLength(12, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 4)]
+        [StringLength(12, ErrorMessage = "The {0} must be at least {2} and at most {1} characters long.", MinimumLength = 4)]
         public string Password {get; set; }
 
 
